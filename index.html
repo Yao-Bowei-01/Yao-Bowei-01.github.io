@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <title>个人学术主页</title>
+  <link rel="stylesheet" href="site.css">
+  <script defer src="content.js"></script>
+  <script defer src="data.js"></script>
+  <script defer src="research.js"></script>
+  <script defer src="studio.js"></script>
+  <script defer src="site.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳至正文</a>
+  <header class="mast"><div class="mast-inner frame">
+    <a class="brand" href="#/" aria-label="学术主页">学术主页</a>
+    <button class="menu-button" type="button" aria-controls="primary-nav" aria-expanded="false">菜单</button>
+    <nav id="primary-nav" aria-label="主导航"></nav>
+  </div></header>
+  <div id="preview-bar" hidden>正在预览本机草稿 <a href="#/studio">返回工作台</a></div>
+  <main id="main" class="frame" tabindex="-1"></main>
+  <noscript>请启用 JavaScript 以浏览个人学术档案。</noscript>
+  <footer class="footer frame"><span id="signature">个人学术档案</span><a href="#/studio">创作工作台</a></footer>
+  <dialog id="viewer" aria-labelledby="viewer-caption">
+    <div class="viewer-bar"><span id="viewer-count"></span><button type="button" data-action="close">关闭</button></div>
+    <div class="viewer-stage"><img id="viewer-image" alt=""></div>
+    <div class="viewer-bar"><button type="button" data-action="prev">上一张</button><p id="viewer-caption" aria-live="polite"></p><button type="button" data-action="next">下一张</button></div>
+  </dialog>
+</body>
+</html>
